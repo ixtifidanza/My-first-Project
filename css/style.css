@@ -50,6 +50,7 @@ body {
 
 .social-link {
     margin-left: 20px;
+    text-decoration: none;
 }
 
 .social-link:first-child {
