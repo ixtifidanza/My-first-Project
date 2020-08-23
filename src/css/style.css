@@ -12,6 +12,7 @@ body {
 .container {
     max-width: 945px;
     margin: auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -143,18 +144,22 @@ button {
 .section-projects {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
 }
+
 .project-slide {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .project-text {
     flex-basis: 60%;
 }
+
 .project-text {
-    display: flex;  
+    display: flex;
     flex-wrap: wrap;
 }
+
 .project-title {
     flex-basis: 100%;
     font-weight: bold;
@@ -163,34 +168,44 @@ button {
     margin: 0;
     margin-bottom: 42px;
 }
-.project-time, .project-cost {
+
+.project-time,
+.project-cost {
     flex-basis: 50%;
 }
-.project-time, .project-cost, .project-feedback {
+
+.project-time,
+.project-cost,
+.project-feedback {
     display: flex;
 }
+
 .project-icon {
     width: 30px;
     height: 30px;
     margin-right: 15px;
 }
- .project-subtitle {
-     margin: 0;
-     font-weight: bold;
-     font-size: 18px;
-     line-height: 21px;
+
+.project-subtitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
 }
- .project-feedback {
-     margin-top: 44px;
- }
- .project-paragraph {
+
+.project-feedback {
+    margin-top: 44px;
+}
+
+.project-paragraph {
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
- }
- .ps {
-     margin-bottom: 50px;
- }
+}
+
+.ps {
+    margin-bottom: 50px;
+}
 
 
 
@@ -269,6 +284,7 @@ button {
 .contacts-social {
     flex-basis: 100%;
 }
+
 .contacts-wrap {
     display: flex;
 }
@@ -279,7 +295,7 @@ button {
     line-height: 28px;
     margin: 0;
     margin-bottom: 15px;
-   
+
 }
 
 .contacts-link {
@@ -291,6 +307,7 @@ button {
 .contacts-link:hover {
     text-decoration: underline;
 }
+
 .contacts-policy {
     font-weight: normal;
     font-size: 15px;
@@ -301,12 +318,157 @@ button {
     display: inline-block;
     margin-top: 72px;
 }
+
 .contacts-policy:hover {
     text-decoration: underline;
 }
 
 .swiper-pagination-bullet {
-    background: #FFBB01!important;
-    
-
+    background: #FFBB01 !important;
 }
+
+
+@media (max-width: 1100px) {
+    .hero-avatar {
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+        background-position: center right -525px;
+    }
+    .contacts-text {
+        margin-left: 20px;
+    }
+    .project-text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 836px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        order: 1;
+        text-align: center;
+    }
+
+    .hero-avatar {
+        order: 0;
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+        margin-bottom: 30px;
+        background-position: center right -525px;
+    }
+    .project-image {
+        display: block;
+        margin: auto;
+        margin-bottom: 46px;
+    }
+    .project-title {
+        text-align: center;
+    }
+
+    .features-item {
+        flex-basis: 40%;
+    }
+
+    .project-slide {
+        flex-direction: column;
+    }
+
+    .contacts-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-phone {
+        display: block;
+        text-align: center;
+    }
+    .contacts-mail {
+        text-align: center;
+    }
+    .contacts-link {
+        margin: auto;
+    }
+    .contacts-social {
+        display: block;
+        text-align: center;
+    }
+    .social-links {
+        display: block;
+        text-align: center;
+    }
+    .contacts-policy {
+        display: block;
+        text-align: center;
+    }
+
+    .contacts-form {
+        margin-bottom: 58px;
+    }
+}
+
+@media (max-width: 564px) {
+    .hero-subtitle {
+        font-size: 38px;
+        line-height: 28px;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-avatar {
+        width: 113px;
+        height: 113px;
+        border-width: 7px;
+        background-size: 174%;
+        background-position: center top;
+    }
+
+    .hero-header {
+        margin-bottom: 40px;
+    }
+    .contacts-wrap {
+        flex-direction: column;
+    }
+    .contacts-mail, .contacts-phone {
+        flex-basis: 100%;
+    }
+    .contacts-link {
+        margin: 5px 0;
+    }
+    .contacts-form {
+        max-width: 300px;
+    }
+    .form-title {
+        font-size: 16px;
+    }
+    .input {
+        padding: 5px 0 0 50px;
+        width: 100%;
+    }
+    .form-button {
+        padding: 10px 42px;
+        font-size: 11px;
+    }
+    .section-title {
+        margin-bottom: 55px;
+        font-size: 30px;
+    }
+    .features-item {
+        flex-basis: 100%;
+    }
+    .hero {
+        padding-bottom: 100px;
+    }
+    .section {
+        padding-bottom: 55px;
+    }
+    .project-paragraph {
+        font-size: 12px;
+    }
+    
+}
+
