@@ -419,6 +419,12 @@ button {
     .hero-title {
         font-size: 40px;
     }
+    .contacts-text {
+        margin-left: 0;
+    }
+    .project-image {
+        max-width: 100%;
+    }
 
     .hero-avatar {
         width: 113px;
